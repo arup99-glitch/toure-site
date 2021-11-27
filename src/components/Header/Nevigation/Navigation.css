@@ -1,0 +1,16 @@
+.height {
+  height: 250px;
+}
+.navlink {
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.zIndex {
+  z-index: 50;
+}
+/* @media only screen and (min-width: 480) {
+  .height {
+    width: 4000px !important;
+  }
+} */
