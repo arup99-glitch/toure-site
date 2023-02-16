@@ -8,7 +8,7 @@ const MyOrders = () => {
   const { user } = useAuth();
   const [myOrders, setMyOrders] = useState([]);
   const email = user.email;
-  const url = `  https://dark-skeleton-11734.herokuapp.com/user/${email}`;
+  const url = `  https://toure-server-production.up.railway.app/user/${email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -23,7 +23,7 @@ const MyOrders = () => {
   const deleteOrder = (id) => {
     const confirmation = window.confirm("are you sure want to delete?");
     if (confirmation) {
-      const url = `  https://dark-skeleton-11734.herokuapp.com/myOrders/${id}`;
+      const url = `  https://toure-server-production.up.railway.app/myOrders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

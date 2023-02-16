@@ -6,7 +6,7 @@ const Packages = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch("  https://dark-skeleton-11734.herokuapp.com/packages")
+    fetch("  https://toure-server-production.up.railway.app/packages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);

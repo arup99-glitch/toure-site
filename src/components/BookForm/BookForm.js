@@ -15,7 +15,7 @@ const BookForm = () => {
   const { id } = useParams();
   const [pack, setPack] = useState({});
   useEffect(() => {
-    fetch(`  https://dark-skeleton-11734.herokuapp.com/productBy/${id}`)
+    fetch(`  https://toure-server-production.up.railway.app/productBy/${id}`)
       .then((res) => res.json())
       .then((data) => setPack(data));
   }, [id]);
@@ -38,7 +38,7 @@ const BookForm = () => {
       pack,
       isPending,
     };
-    fetch("  https://dark-skeleton-11734.herokuapp.com/orders", {
+    fetch("  https://toure-server-production.up.railway.app/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

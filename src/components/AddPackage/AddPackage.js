@@ -22,7 +22,7 @@ const AddPackage = () => {
       status: true,
     };
 
-    fetch("  https://dark-skeleton-11734.herokuapp.com/addPackage", {
+    fetch("  https://toure-server-production.up.railway.app/addPackage", {
       method: "POST",
       headers: {
         "content-type": "application/json",
